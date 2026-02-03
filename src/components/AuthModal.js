@@ -71,7 +71,7 @@ function AuthModal({ isOpen, onClose, mode = 'login' }) {
             role: formData.role
           };
 
-      const response = await fetch(`http://localhost:5000/api/auth/${endpoint}`, {
+      const response = await fetch(`${API_URL}/auth/${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

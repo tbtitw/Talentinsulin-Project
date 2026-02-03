@@ -1,0 +1,25 @@
+node_modules
+.git
+.env
+.env.local
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage
+
+# Production
+/build
+
+# Misc
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Local MongoDB
+/data

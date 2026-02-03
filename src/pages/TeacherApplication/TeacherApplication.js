@@ -33,7 +33,7 @@ function TeacherApplication() {
     setMessage({ type: '', text: '' });
 
     try {
-      const response = await fetch('http://localhost:5000/api/teachers/apply', {
+      const response = await fetch(`${API_URL}/teachers/apply`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -118,7 +118,7 @@ function Pricing({ openModal }) {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/transactions/buy-tokens', {
+      const response = await fetch(`${API_URL}/transactions/buy-tokens`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

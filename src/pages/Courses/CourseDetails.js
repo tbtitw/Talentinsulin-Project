@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+import { API_URL } from '../../config';
 import './CourseDetails.css';
 
 function CourseDetails() {
@@ -20,7 +21,7 @@ function CourseDetails() {
         return;
       }
 
-      const response = await fetch(`http://localhost:5000/api/courses/${courseId}`, {
+      const response = await fetch(`${API_URL}/courses/${courseId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

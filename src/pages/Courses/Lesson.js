@@ -25,7 +25,7 @@ function Lesson() {
         return;
       }
 
-      const response = await fetch(`http://localhost:5000/api/courses/${courseId}/lessons/${lessonId}`, {
+      const response = await fetch(`${API_URL}/courses/${courseId}/lessons/${lessonId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -45,7 +45,7 @@ function Lesson() {
   const fetchCourse = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/courses/${courseId}`, {
+      const response = await fetch(`${API_URL}/courses/${courseId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -74,7 +74,7 @@ function Lesson() {
   const completeLesson = async () => {
     try {
       const token = localStorage.getItem('token');
-      await fetch(`http://localhost:5000/api/courses/${courseId}/lessons/${lessonId}/complete`, {
+      await fetch(`${API_URL}/courses/${courseId}/lessons/${lessonId}/complete`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`

@@ -33,7 +33,7 @@ function Courses() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/me', {
+      const response = await fetch(`${API_URL}/auth/me`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -54,7 +54,7 @@ function Courses() {
 
   const fetchAllCourses = async () => {
     try {
-      let url = 'http://localhost:5000/api/courses/all';
+      let url = `${API_URL}/courses/all`;
       const params = new URLSearchParams();
       if (filterLanguage) params.append('language', filterLanguage);
       if (filterLevel) params.append('level', filterLevel);
@@ -79,7 +79,7 @@ function Courses() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/courses/generate', {
+      const response = await fetch(`${API_URL}/courses/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ function Courses() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/courses/${courseId}/purchase`, {
+      const response = await fetch(`${API_URL}/courses/${courseId}/purchase`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
