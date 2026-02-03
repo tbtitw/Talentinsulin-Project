@@ -1,0 +1,356 @@
+.profile-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.profile-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.profile-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-text, #1a1a1a);
+  margin-bottom: 12px;
+}
+
+.profile-subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-text, #666666);
+  margin: 0 0 16px 0;
+}
+
+.profile-tokens-display {
+  font-size: 1.3rem;
+  color: var(--primary-text, #1a1a1a);
+  font-weight: 600;
+}
+
+.profile-token-count {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-left: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 30px;
+}
+
+.profile-card {
+  background: var(--white, #ffffff);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-text, #1a1a1a);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border, #e5e5e5);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-text, #1a1a1a);
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid var(--border, #e5e5e5);
+  border-radius: 8px;
+  background: var(--white, #ffffff);
+  color: var(--primary-text, #1a1a1a);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-text, #1a1a1a);
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+}
+
+.form-group input:disabled {
+  background: var(--light-bg, #f5f5f5);
+  cursor: not-allowed;
+  color: var(--secondary-text, #666666);
+}
+
+.form-group input.editing {
+  border-color: var(--primary-text, #1a1a1a);
+}
+
+.input-with-button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.input-with-button input {
+  flex: 1;
+}
+
+/* Buttons */
+.btn-edit,
+.btn-cancel,
+.btn-change-password,
+.pagination-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background: var(--primary-text, #1a1a1a);
+  color: var(--white, #ffffff);
+}
+
+.btn-edit:hover {
+  background: var(--secondary-text, #666666);
+  transform: translateY(-2px);
+}
+
+.btn-cancel {
+  background: transparent;
+  color: var(--secondary-text, #666666);
+  border: 1px solid var(--border, #e5e5e5);
+}
+
+.btn-cancel:hover {
+  background: var(--light-bg, #f5f5f5);
+}
+
+.btn-change-password {
+  width: 100%;
+  background: var(--primary-text, #1a1a1a);
+  color: var(--white, #ffffff);
+  padding: 14px 20px;
+  margin-top: 8px;
+}
+
+.btn-change-password:hover {
+  background: var(--secondary-text, #666666);
+  transform: translateY(-2px);
+}
+
+/* Transactions Table */
+.transactions-loading,
+.no-transactions {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--secondary-text, #666666);
+  font-size: 1rem;
+}
+
+.transactions-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table thead {
+  background: var(--light-bg, #f5f5f5);
+}
+
+.transactions-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-text, #1a1a1a);
+  border-bottom: 2px solid var(--border, #e5e5e5);
+}
+
+.transactions-table td {
+  padding: 16px;
+  font-size: 0.95rem;
+  color: var(--secondary-text, #666666);
+  border-bottom: 1px solid var(--border, #e5e5e5);
+}
+
+.transactions-table tbody tr:hover {
+  background: var(--light-bg, #f5f5f5);
+}
+
+.amount-positive {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.amount-negative {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.status-badge.successful {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-badge.completed {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.status-badge.pending {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+.status-badge.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  background: var(--white, #ffffff);
+  color: var(--primary-text, #1a1a1a);
+  border: 1px solid var(--border, #e5e5e5);
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: var(--primary-text, #1a1a1a);
+  color: var(--white, #ffffff);
+  border-color: var(--primary-text, #1a1a1a);
+}
+
+.pagination-btn.active {
+  background: var(--primary-text, #1a1a1a);
+  color: var(--white, #ffffff);
+  border-color: var(--primary-text, #1a1a1a);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-right {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .input-with-button {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-with-button input {
+    width: 100%;
+  }
+
+  .btn-edit,
+  .btn-cancel {
+    width: 100%;
+  }
+
+  .transactions-table {
+    font-size: 0.85rem;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    padding: 10px 8px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+
+  .pagination-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-page {
+    padding: 20px 10px;
+  }
+
+  .profile-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .transactions-table-wrapper {
+    overflow-x: scroll;
+  }
+
+  .transactions-table {
+    min-width: 600px;
+  }
+}

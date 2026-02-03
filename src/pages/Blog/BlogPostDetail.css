@@ -1,0 +1,378 @@
+.blog-post-detail-page {
+  min-height: calc(100vh - 200px);
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.blog-post-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: #666666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #1a1a1a;
+}
+
+.post-detail-content {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e5e5;
+  margin-bottom: 60px;
+}
+
+.post-detail-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.post-detail-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.post-detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-detail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+}
+
+.post-detail-category {
+  display: inline-block;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 50px 20px;
+}
+
+.post-detail-header h1 {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin: 0 50px 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.post-detail-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #666666;
+  font-size: 0.95rem;
+  padding: 0 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e5e5e5;
+  margin: 0 50px;
+}
+
+.post-detail-author {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.post-divider {
+  color: #d0d0d0;
+}
+
+.post-detail-date,
+.post-detail-read-time {
+  color: #999999;
+}
+
+.post-detail-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333333;
+  padding: 40px 50px;
+}
+
+.post-detail-body p {
+  margin-bottom: 20px;
+}
+
+.post-detail-body h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.post-detail-body h3 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.post-detail-body ul,
+.post-detail-body ol {
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.post-detail-body li {
+  margin-bottom: 10px;
+}
+
+.post-detail-body strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.post-detail-footer {
+  padding: 30px 50px 50px;
+  border-top: 2px solid #e5e5e5;
+  margin: 0 50px;
+}
+
+.post-detail-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tag {
+  background: #f5f5f5;
+  color: #666666;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.post-detail-share {
+  text-align: center;
+}
+
+.post-detail-share > span {
+  display: block;
+  color: #666666;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.share-btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #d0d0d0;
+  background: white;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-btn:hover {
+  background: #f5f5f5;
+  border-color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.related-posts {
+  margin-top: 60px;
+}
+
+.related-posts h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.related-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  border-color: #d0d0d0;
+}
+
+.related-image-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.related-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.related-card:hover .related-image {
+  transform: scale(1.05);
+}
+
+.related-content {
+  padding: 20px;
+}
+
+.related-category {
+  display: inline-block;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.related-content h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.related-read-time {
+  color: #999999;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .blog-post-detail-page {
+    padding: 40px 16px;
+  }
+
+  .post-detail-image-wrapper {
+    height: 280px;
+  }
+
+  .post-detail-header h1 {
+    font-size: 2rem;
+    margin: 0 24px 20px;
+  }
+
+  .post-detail-category {
+    margin: 0 24px 20px;
+  }
+
+  .post-detail-meta {
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    padding: 0 24px 24px;
+    margin: 0 24px;
+  }
+
+  .post-detail-body {
+    font-size: 1rem;
+    padding: 30px 24px;
+  }
+
+  .post-detail-body h2 {
+    font-size: 1.5rem;
+  }
+
+  .post-detail-footer {
+    padding: 24px 24px 40px;
+    margin: 0 24px;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-detail-image-wrapper {
+    height: 220px;
+  }
+
+  .post-detail-header h1 {
+    font-size: 1.6rem;
+    margin: 0 20px 16px;
+  }
+
+  .post-detail-category {
+    margin: 0 20px 16px;
+  }
+
+  .post-detail-meta {
+    padding: 0 20px 20px;
+    margin: 0 20px;
+  }
+
+  .post-detail-body {
+    padding: 24px 20px;
+  }
+
+  .post-detail-body h2 {
+    font-size: 1.3rem;
+  }
+
+  .post-detail-footer {
+    padding: 20px 20px 32px;
+    margin: 0 20px;
+  }
+
+  .share-buttons {
+    gap: 8px;
+  }
+
+  .share-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+}

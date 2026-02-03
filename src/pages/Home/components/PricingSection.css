@@ -1,0 +1,378 @@
+.home-pricing-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.home-pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.home-pricing-header h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.home-pricing-header p {
+  font-size: 1.1rem;
+  color: #666666;
+}
+
+.home-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.home-pricing-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #1a1a1a;
+}
+
+.home-pricing-card.popular {
+  border-color: #1a1a1a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a1a;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.home-pricing-card h3 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.amount {
+  font-size: 3rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.tokens-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.features-list li {
+  padding: 12px 0;
+  color: #333333;
+  font-size: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.select-plan-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 32px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.select-plan-btn:hover {
+  background: #333333;
+  transform: translateY(-2px);
+}
+
+.select-plan-btn:disabled {
+  background: #999999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.select-plan-btn:disabled:hover {
+  background: #999999;
+  transform: none;
+}
+
+/* Custom Card in Grid Styles */
+.home-pricing-card.custom-card {
+  border-color: #4CAF50;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9f0 100%);
+}
+
+.home-pricing-card.custom-card:hover {
+  border-color: #45a049;
+}
+
+.custom-rate-info {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border, #e5e5e5);
+}
+
+.rate-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-text, #1a1a1a);
+}
+
+.custom-input-wrapper {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.custom-input-wrapper label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-text, #1a1a1a);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.custom-input-wrapper input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--border, #e5e5e5);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.custom-input-wrapper input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.custom-input-wrapper input.error {
+  border-color: #f44336;
+}
+
+.error-msg {
+  display: block;
+  color: #f44336;
+  font-size: 0.8rem;
+  margin-top: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.custom-total {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 2px solid #4CAF50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.total-label {
+  font-size: 1rem;
+  color: var(--secondary-text, #666666);
+  font-weight: 500;
+}
+
+.total-amount {
+  font-size: 1.8rem;
+  color: var(--primary-text, #1a1a1a);
+  font-weight: 700;
+}
+
+/* Custom Token Card (separate) - keep for backward compatibility */
+.custom-token-card-home {
+  max-width: 600px;
+  margin: 60px auto 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid #1a1a1a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.custom-header h3 {
+  font-size: 1.8rem;
+  color: var(--primary-text, #1a1a1a);
+  margin: 0;
+  font-weight: 700;
+}
+
+.custom-badge {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.custom-description {
+  font-size: 1rem;
+  color: var(--secondary-text, #666666);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.custom-input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.custom-input-group label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-text, #1a1a1a);
+  margin-bottom: 8px;
+}
+
+.custom-input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--border, #e5e5e5);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.custom-input-group input:focus {
+  outline: none;
+  border-color: var(--primary-text, #1a1a1a);
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+}
+
+.custom-input-group input.error {
+  border-color: #f44336;
+}
+
+.error-message {
+  display: block;
+  color: #f44336;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.custom-price-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 2px solid var(--primary-text, #1a1a1a);
+}
+
+.price-label {
+  font-size: 1rem;
+  color: var(--secondary-text, #666666);
+  font-weight: 500;
+}
+
+.custom-price {
+  font-size: 1.8rem;
+  color: var(--primary-text, #1a1a1a);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .home-pricing-section {
+    padding: 60px 16px;
+  }
+
+  .home-pricing-header h2 {
+    font-size: 2rem;
+  }
+
+  .home-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-token-card-home {
+    padding: 30px 24px;
+    margin: 40px auto 0;
+  }
+
+  .custom-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .custom-price {
+    font-size: 1.5rem;
+  }
+}

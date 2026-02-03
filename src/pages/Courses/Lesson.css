@@ -1,0 +1,271 @@
+.lesson-page {
+  min-height: calc(100vh - 200px);
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.lesson-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.back-link {
+  color: #666666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #1a1a1a;
+}
+
+.lesson-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: #999999;
+}
+
+.lesson-container h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}
+
+.lesson-container h2 {
+  font-size: 1.75rem;
+  color: #333333;
+  margin: 32px 0 16px 0;
+}
+
+.lesson-container h3 {
+  font-size: 1.25rem;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.lesson-content {
+  margin-bottom: 40px;
+}
+
+.content-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444444;
+  white-space: pre-line;
+}
+
+.vocabulary-section {
+  margin-bottom: 40px;
+}
+
+.vocabulary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.vocabulary-card {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.vocab-word {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.vocab-translation {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.vocab-example {
+  font-size: 0.9rem;
+  color: #999999;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.exercises-section {
+  margin-top: 40px;
+}
+
+.exercise-card {
+  background: #fafafa;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 1px solid #e5e5e5;
+}
+
+.exercise-question {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.exercise-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  padding: 14px 20px;
+  background: white;
+  border: 2px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333333;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: #999999;
+  background: #f9f9f9;
+}
+
+.option-btn.selected {
+  border-color: #666666;
+  background: #f0f0f0;
+  font-weight: 500;
+}
+
+.option-btn.correct {
+  border-color: #4caf50;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.option-btn.incorrect {
+  border-color: #ef5350;
+  background: #ffebee;
+  color: #c62828;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+}
+
+.feedback-icon {
+  float: right;
+  font-size: 1.2rem;
+}
+
+.correct-answer {
+  margin-top: 12px;
+  padding: 12px;
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  border-radius: 4px;
+  color: #2e7d32;
+  font-size: 0.95rem;
+}
+
+.check-answers-btn,
+.complete-lesson-btn {
+  width: 100%;
+  padding: 16px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.check-answers-btn:hover:not(:disabled),
+.complete-lesson-btn:hover {
+  background: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.check-answers-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.results-section {
+  background: #f0f0f0;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.results-section h3 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.results-section p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.1rem;
+  color: #666666;
+}
+
+.error {
+  color: #c62828;
+}
+
+@media (max-width: 768px) {
+  .lesson-container {
+    padding: 30px 20px;
+  }
+
+  .lesson-container h1 {
+    font-size: 2rem;
+  }
+
+  .lesson-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .vocabulary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-card {
+    padding: 20px 16px;
+  }
+}

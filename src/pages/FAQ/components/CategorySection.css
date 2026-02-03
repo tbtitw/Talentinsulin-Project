@@ -1,0 +1,18 @@
+.faq-category {
+  margin-bottom: 50px;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.category-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

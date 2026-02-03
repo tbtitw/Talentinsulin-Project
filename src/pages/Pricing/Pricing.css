@@ -1,0 +1,630 @@
+.pricing-page {
+  min-height: calc(100vh - 200px);
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-header h1 {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.pricing-header p {
+  font-size: 1.2rem;
+  color: #666666;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #1a1a1a;
+}
+
+.pricing-card.popular {
+  border-color: #1a1a1a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a1a;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pricing-card h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.amount {
+  font-size: 3rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.tokens-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.features-list li {
+  padding: 12px 0;
+  color: #333333;
+  font-size: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.select-plan-btn {
+  width: 100%;
+  padding: 14px 32px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.select-plan-btn:hover {
+  background: #333333;
+  transform: translateY(-2px);
+}
+
+.select-plan-btn:disabled {
+  background: #999999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.select-plan-btn:disabled:hover {
+  background: #999999;
+  transform: none;
+}
+
+/* Custom Token Purchase Section */
+.custom-token-section {
+  max-width: 600px;
+  margin: 60px auto 80px;
+}
+
+.custom-token-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  padding: 50px 40px;
+  border-radius: 12px;
+  border: 2px solid #1a1a1a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.custom-header h2 {
+  font-size: 2rem;
+  color: var(--primary-text, #1a1a1a);
+  margin: 0;
+  font-weight: 700;
+}
+
+.custom-badge {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.custom-description {
+  font-size: 1.1rem;
+  color: var(--secondary-text, #666666);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.rate-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border, #e5e5e5);
+}
+
+.rate-label {
+  font-size: 1rem;
+  color: var(--secondary-text, #666666);
+  font-weight: 500;
+}
+
+.rate-value {
+  font-size: 1.2rem;
+  color: var(--primary-text, #1a1a1a);
+  font-weight: 700;
+}
+
+.custom-input-group {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.custom-input-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-text, #1a1a1a);
+  margin-bottom: 8px;
+}
+
+.custom-input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid var(--border, #e5e5e5);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.custom-input-group input:focus {
+  outline: none;
+  border-color: var(--primary-text, #1a1a1a);
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+}
+
+.custom-input-group input.error {
+  border-color: #f44336;
+}
+
+.error-message {
+  display: block;
+  color: #f44336;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.custom-price-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 2px solid var(--primary-text, #1a1a1a);
+}
+
+.price-label {
+  font-size: 1.1rem;
+  color: var(--secondary-text, #666666);
+  font-weight: 500;
+}
+
+.custom-price {
+  font-size: 2rem;
+  color: var(--primary-text, #1a1a1a);
+  font-weight: 700;
+}
+
+.custom-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .pricing-page {
+    padding: 40px 16px;
+  }
+
+  .pricing-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table {
+    overflow-x: auto;
+  }
+
+  .comparison-table table {
+    min-width: 600px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custom-token-section {
+    margin: 40px 0 60px;
+  }
+
+  .custom-token-card {
+    padding: 30px 24px;
+  }
+
+  .custom-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .custom-description {
+    font-size: 1rem;
+  }
+
+  .custom-price {
+    font-size: 1.6rem;
+  }
+}
+
+/* Comparison Table */
+.comparison-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.comparison-section h2 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.comparison-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table thead {
+  background: #1a1a1a;
+  color: white;
+}
+
+.comparison-table th {
+  padding: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.comparison-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333333;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.comparison-table td:not(:first-child) {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.comparison-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.benefits-section h2 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.benefit-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.3s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* FAQ Section */
+.pricing-faq-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.pricing-faq-section h2 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.3s;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.faq-item p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+.faq-link {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.faq-link p {
+  color: #666666;
+  margin-bottom: 12px;
+}
+
+.view-all-faq {
+  display: inline-block;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.view-all-faq:hover {
+  background: #1a1a1a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-rating {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.testimonial-card p {
+  color: #333333;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonial-author strong {
+  color: #1a1a1a;
+  font-size: 1rem;
+}
+
+.testimonial-author span {
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+/* CTA Section */
+.pricing-cta {
+  margin-top: 80px;
+  text-align: center;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  border-radius: 16px;
+  color: white;
+}
+
+.pricing-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.pricing-cta > p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.cta-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-item strong {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+.stat-item span {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+

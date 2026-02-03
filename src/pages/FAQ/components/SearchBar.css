@@ -1,0 +1,25 @@
+.faq-search {
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 1rem;
+  border: 2px solid #e5e5e5;
+  border-radius: 12px;
+  background: white;
+  color: #1a1a1a;
+  transition: all 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+}
+
+.search-input::placeholder {
+  color: #999999;
+}
